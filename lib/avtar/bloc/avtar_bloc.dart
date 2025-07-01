@@ -127,7 +127,7 @@ class HomeBloc extends Bloc<AvtarEvent, AvatarState> {
   List<Avtar> _filterAvatars(List<Avtar> avatars) {
     var filtered = avatars;
 
-    // Filter by name
+    // Filter  name
     if (_currentNameQuery != null && _currentNameQuery!.isNotEmpty) {
       filtered =
           filtered.where((avatar) {
@@ -138,7 +138,7 @@ class HomeBloc extends Bloc<AvtarEvent, AvatarState> {
           }).toList();
     }
 
-    // Filter by gender
+    // Filter gender
     if (_currentGenderFilter != null &&
         _currentGenderFilter!.isNotEmpty &&
         _currentGenderFilter != 'all') {
@@ -148,7 +148,7 @@ class HomeBloc extends Bloc<AvtarEvent, AvatarState> {
               .toList();
     }
 
-    // Filter by age range
+    // Filter age 
     if (_currentAgeRangeFilter != null &&
         _currentAgeRangeFilter!.isNotEmpty &&
         _currentAgeRangeFilter != 'all') {
@@ -189,7 +189,7 @@ class HomeBloc extends Bloc<AvtarEvent, AvatarState> {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setStringList('favorites', favorites);
     } catch (e) {
-      // Handle error silently
+      print("Error saving favorites: $e");
     }
   }
 }

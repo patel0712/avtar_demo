@@ -43,3 +43,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+.metadata
+pubspec.lock
+.vscode/tasks.json
+android/.gitignore
+ios/.gitignore
+lib/avtar/bloc/avtar_bloc.dart
+linux/.gitignore
+windows/.gitignore
