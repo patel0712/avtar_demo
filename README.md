@@ -112,3 +112,11 @@ flutter build ios --release
 6. **Refresh**
    - Pull down on the list to refresh and get new avatars
    - Use the refresh button in the app bar
+
+
+### Screenshots
+![image](https://github.com/user-attachments/assets/74c4ffd4-998c-4820-92e1-705d02e4ddb6)
+![image](https://github.com/user-attachments/assets/0068a136-d324-41b6-82a1-80ca88356c4c)
+![image](https://github.com/user-attachments/assets/aee68836-e7bf-4fe6-891c-8977d33a61fb)
+
+
